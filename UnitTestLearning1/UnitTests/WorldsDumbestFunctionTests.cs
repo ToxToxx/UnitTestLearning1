@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace UnitTestLearning1.UnitTests
 {
-    internal class WorldsDumbestFunctionTests
+    public static class WorldsDumbestFunctionTests
     {
+        //Naming Convention - Classname_MethodName_ExpectedResult
+        public static void WorldsDumbestFunction_ReturnsPikachuIfZero_ReturnsString()
+        {
+
+        }
     }
 }
