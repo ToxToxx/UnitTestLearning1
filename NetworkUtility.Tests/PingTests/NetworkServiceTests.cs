@@ -30,6 +30,16 @@ namespace NetworkUtility.Tests.PingTests
         [InlineData(2, 2, 4)]
         public void NetworkService_PingTimeout_ReturnInt(int a, int b, int expected)
         {
+            //Arrange
+            var pingService = new NetworkService();
+
+            //Act
+            var result = pingService.PingTimeout(a, b);
+
+            //Assert
+            result.Should().Be(expected);
+            result.Should().BeGreaterThanOrEqualTo(3);
+            result.Should().NotBeInRange(-10000, 0);
 
         }
     }
