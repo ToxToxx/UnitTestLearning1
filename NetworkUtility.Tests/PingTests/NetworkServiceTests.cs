@@ -23,6 +23,13 @@ namespace NetworkUtility.Tests.PingTests
             result.Should().NotBeNullOrWhiteSpace();
             result.Should().Be("Success: Ping Sent");
             result.Should().Contain("Success", Exactly.Once());
+        }
+
+        [Theory]
+        [InlineData(1, 2, 3)]
+        [InlineData(2, 2, 4)]
+        public void NetworkService_PingTimeout_ReturnInt(int a, int b, int expected)
+        {
 
         }
     }
