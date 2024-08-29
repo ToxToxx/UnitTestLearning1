@@ -35,8 +35,8 @@ namespace NetworkUtility.Ping
 
         public IEnumerable<PingOptions> MostRecentPings()
         {
-            IEnumerable<PingOptions> pingOptions = new[]
-            {
+            IEnumerable<PingOptions> pingOptions =
+            [
                 new PingOptions()
                     {
                         DontFragment = true,
@@ -52,7 +52,7 @@ namespace NetworkUtility.Ping
                         DontFragment = true,
                         Ttl = 1
                      },
-            };
+            ];
 
             return pingOptions;
         }
