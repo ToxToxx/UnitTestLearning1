@@ -31,6 +31,7 @@ namespace NetworkUtility.Tests.PingTests
         public void NetworkService_SendPing_ReturnString()
         {
             //Arrange
+            A.CallTo(() => _dns.SendDNS()).Returns(true);
 
             //Act
             var result = _pingService.SendPing();
