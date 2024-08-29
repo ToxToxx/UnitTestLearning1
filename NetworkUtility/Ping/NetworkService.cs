@@ -24,7 +24,7 @@ namespace NetworkUtility.Ping
             return DateTime.Now;
         }
 
-        public PingOptions GetPpingOptions()
+        public PingOptions GetPingOptions()
         {
             return new PingOptions()
             {
